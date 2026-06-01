@@ -1133,15 +1133,11 @@ main {
     border-radius: 50%;
     background-color: var(--color-teal-2);
     border: none;
-
-    /* z-index: 0.5; */
-
     i {
         color: white;
         font-size: 30px;
     }
 }
-
 .container-two {
     display: flex;
     justify-content: center;
@@ -1149,7 +1145,6 @@ main {
     height: 200px;
     background-color: var(--color-teal-2);
 }
-
 .container-btn {
     width: 90%;
     display: flex;
