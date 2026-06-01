@@ -104,6 +104,120 @@ body {
 }
 
 /* ! end header */
+/* todo start hero section */
+.main {
+    width: 100%;
+
+}
+
+.section-contact {
+    width: 100%;
+}
+
+.header-hero {
+    width: 100%;
+    background-color: var(--color-teal-1);
+    text-align: center;
+    padding: 80px 20px;
+    /* position: relative; */
+}
+
+.header-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--color-blue-tel);
+}
+
+.box-hero {
+    font-size: 14px;
+    /* color: var(--text-muted); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.box-hero a {
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(64, 77, 77);
+}
+
+.box-hero i {
+    color: rgb(50, 56, 56);
+    font-size: 12px;
+
+}
+
+/* todo end hero section */
+/* ?start section contact*/
+.section-conatct {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-contact {
+    width: 90%;
+    padding: 50px;
+    display: grid;
+    gap: 
+    20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box-left {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.city h4{
+    color: var(--color-dark-blue);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.city p{
+    color: rgb(161, 152, 161);
+    font-size: 16px;
+    line-height: 2;
+}
+.box-right{
+    display: flex;
+}
+.container-form{
+    width: 100%;
+    display:grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+}
+.field-set{
+
+    width: 100%;
+}
+.form-control{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgb(219, 219, 213);
+    border-radius: 10px;
+    background-color: rgb(248, 248, 247);
+    outline: none;
+    font-size: 18px;
+}
+.btn-form{
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    background-color:var(--color-teal-2);
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+/* ?End section contact*/
 /* ?start FOOTER */
 .footer {
     width: 100%;
