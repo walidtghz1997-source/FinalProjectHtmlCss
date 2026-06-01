@@ -12,15 +12,17 @@
     --border: 1px solid rgb(167, 180, 179);
 
 }
-html{
-    scroll-behavior: smooth;
-}
+
 body {
     font-family: sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* ! start header */
@@ -106,34 +108,34 @@ body {
 }
 
 /* ! end header */
-/* todo start hero section */
+/* ? start HERO section  */
 .main {
     width: 100%;
 
 }
 
-.section-contact {
+.hero-section {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header-hero {
-    width: 100%;
-    background-color: var(--color-teal-1);
+    background-color: rgb(229, 248, 247);
     text-align: center;
     padding: 80px 20px;
-    /* position: relative; */
+    width: 100%;
 }
 
 .header-hero h1 {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 10px;
-    color: var(--color-blue-tel);
 }
 
 .box-hero {
     font-size: 14px;
-    /* color: var(--text-muted); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,9 +143,8 @@ body {
 }
 
 .box-hero a {
-    font-weight: 600;
     text-decoration: none;
-    color: rgb(64, 77, 77);
+    color: rgb(50, 56, 56);
 }
 
 .box-hero i {
@@ -152,84 +153,102 @@ body {
 
 }
 
-/* todo end hero section */
-/* ?start section contact*/
-.section-conatct {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.container-contact {
+/* ?start section faq */
+.section-faq {
+padding: 100px 50px;
     width: 90%;
-    padding: 50px;
     display: grid;
-    gap:
-        20px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.box-left {
-    display: grid;
-    column-gap: 30px;
-    row-gap: 50px;
-    grid-template-columns: repeat(2, 1fr);
-
+.container-faq {
+    width: 100%;
+    grid-column: span 2;
+    padding: 20px 0px 50px 0px;
 }
 
-.city h4 {
-    color: var(--color-dark-blue);
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 10px;
-}
-
-.city p {
-    color: rgb(161, 152, 161);
-    font-size: 16px;
-    line-height: 2;
-}
-
-.box-right {
+.list-one {
+    list-style: none;
     display: flex;
-}
-
-.container-form {
-    width: 100%;
-    display: grid;
-    gap: 30px;
-    grid-template-columns: 1fr;
-}
-
-.field-set {
-
-    width: 100%;
-}
-
-.form-control {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid rgb(219, 219, 213);
-    border-radius: 10px;
-    background-color: rgb(248, 248, 247);
-    outline: none;
-    font-size: 18px;
-}
-
-.btn-form {
-    width: 100%;
-    padding: 15px;
-    border-radius: 30px;
-    border: none;
-    background-color: var(--color-teal-2);
-    color: white;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
     cursor: pointer;
-    font-size: 18px;
+}
+.active-btn{
+    padding: 15px  20px;
+    color: white;
+    border-radius: 30px;
+    font-weight: 600;
+    background-color: var(--color-teal-2);
+
+}
+.list-two {
+    width: 90%;
+    /* background-color: aquamarine; */
+    list-style: none;
+    display: flex;
+    /* gap: 40px; */
 }
 
-/* ?End section contact*/
+.list-two {
+
+    /* background-color: red; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+
+.details {
+    width: 100%;
+    list-style: none;
+    cursor: pointer;
+}
+
+.summary {
+    color: var(--color-blue-tel);
+    font-weight: 600;
+    padding-bottom: 20px;
+    width: 100%;
+    align-items: center;
+    border-bottom: var(--border);
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.details p{
+    color: rgb(148, 146, 166);
+    font-weight: 500;
+    line-height: 2;
+    padding: 20px 0px;
+
+}
+
+.container-image {
+    margin-top: 30px;
+    overflow: hidden;
+    grid-column: span 1;
+    width: 400px;
+    height: 380px;
+    border-radius: 20px;
+}
+
+.container-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ?end section faq */
 /* ?start FOOTER */
 .footer {
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -348,7 +367,7 @@ body {
 }
 
 .container-footer-bottom {
-    width: 90%;
+    width: 88%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -386,6 +405,4 @@ body {
     color: white;
 }
 
-
 /* ?End FOOTER */
-/* ! responsive tablet */
