@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-teal-1: rgb(228, 246, 244);
+    --color-teal-2: rgb(0, 182, 180);
+    --color-blue-tel: rgb(33, 52, 66);
+    --color-dark-blue: rgb(0, 83, 95);
+    --border: 1px solid rgb(167, 180, 179);
+
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ! start header */
+.container-header {
+    width: 90%;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.container-header .navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.container-header .navbar .list-nav {
+    list-style: none;
+}
+
+.link-nav {
+    text-decoration: none;
+    color: rgb(33, 52, 66);
+}
+
+.list-nav i {
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.dorp-list {
+    display: block;
+    position: relative;
+}
+
+.dropdown-menu {
+    list-style: none;
+    background-color:white;
+    border: var(--border);
+    padding: 20px 40px 20px 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    display: none;
+    z-index: 100;
+
+    li {
+        margin-top: 10px;
+    }
+}
+
+.dorp-list:hover .dropdown-menu {
+    display: block;
+}
+
+.btn-visit {
+    position: relative;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    padding: 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background-color: var(--color-teal-2);
+    overflow: hidden;
+}
+
+.btn-visit::before {
+    content: "Book Your Visit";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+}
+
+.btn-visit::after {
+    content: "Book Your Visit";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #009999;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease;
+}
+
+.btn-visit:hover::before {
+    transform: translateY(100%);
+}
+
+.btn-visit:hover::after {
+    transform: translateY(0);
+}
+
+/* ! end header */

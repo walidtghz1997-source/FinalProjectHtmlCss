@@ -54,6 +54,32 @@ html {
     font-size: 13px;
 }
 
+.dorp-list {
+    display: block;
+    position: relative;
+}
+
+.dropdown-menu {
+    list-style: none;
+    background-color:white;
+    border: var(--border);
+    padding: 20px 40px 20px 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    display: none;
+    z-index: 100;
+
+    li {
+        margin-top: 10px;
+    }
+}
+
+.dorp-list:hover .dropdown-menu {
+    display: block;
+}
+
 .btn-visit {
     position: relative;
     width: 200px;
@@ -155,7 +181,7 @@ html {
 
 /* ?start section faq */
 .section-faq {
-padding: 100px 50px;
+    padding: 100px 50px;
     width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -175,14 +201,16 @@ padding: 100px 50px;
     margin-bottom: 40px;
     cursor: pointer;
 }
-.active-btn{
-    padding: 15px  20px;
+
+.active-btn {
+    padding: 15px 20px;
     color: white;
     border-radius: 30px;
     font-weight: 600;
     background-color: var(--color-teal-2);
 
 }
+
 .list-two {
     width: 90%;
     /* background-color: aquamarine; */
@@ -222,7 +250,8 @@ padding: 100px 50px;
     justify-content: space-between;
     list-style: none;
 }
-.details p{
+
+.details p {
     color: rgb(148, 146, 166);
     font-weight: 500;
     line-height: 2;
