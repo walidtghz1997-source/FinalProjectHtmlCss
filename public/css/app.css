@@ -49,6 +49,32 @@ body {
     margin-left: 10px;
     font-size: 13px;
 }
+.dorp-list {
+    display: block;
+    position: relative;
+}
+
+.dropdown-menu {
+    list-style: none;
+    background-color: white;
+    border: var(--border);
+    width: 150px;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    display: none;
+    z-index: 100;
+
+    li {
+        margin-top: 10px;
+    }
+}
+
+.dorp-list:hover .dropdown-menu {
+    display: block;
+}
 
 .btn-visit {
     position: relative;

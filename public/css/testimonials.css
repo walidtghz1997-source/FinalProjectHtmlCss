@@ -61,9 +61,10 @@ html {
 
 .dropdown-menu {
     list-style: none;
-    background-color:white;
+    background-color: white;
     border: var(--border);
-    padding: 20px 40px 20px 10px;
+    width: 150px;
+    padding: 10px;
     position: absolute;
     top: 100%;
     left: 0;
@@ -134,10 +135,127 @@ html {
 }
 
 /* ! end header */
+/* ? start HERO section  */
+.main {
+    width: 100%;
+
+}
+
+.hero-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-hero {
+    background-color: rgb(229, 248, 247);
+    text-align: center;
+    padding: 80px 20px;
+    width: 100%;
+}
+
+.header-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.box-hero {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.box-hero a {
+    text-decoration: none;
+    color: rgb(50, 56, 56);
+}
+
+.box-hero i {
+    color: rgb(50, 56, 56);
+    font-size: 12px;
+
+}
+
+/* ?end hero section */
+/* !start section doctors */
+.section-doctors {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-doctors {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 100px 0px;
+}
+
+.card-doctor {
+    padding: 40px 30px;
+    border-radius: 20px;
+    border: var(--border);
+}
+
+.box-doctor {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.box-image-doc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-doc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.image-doc .info-doctor h4 {
+    color: var(--color-dark-blue);
+    margin-bottom: 10px;
+}
+
+.image-doc .info-doctor span {
+    color: rgb(132, 146, 186);
+}
+
+.image-doc .img-doc {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.icon-google {
+    width: 50px;
+    height: 50px;
+}
+
+.doctor-stars {
+    display: flex;
+    gap: 5px;
+    color: rgb(242, 184, 39);
+}
+
+.paragraphe-card-doc {
+    font-size: 16px;
+    color: rgb(132, 146, 186);
+    line-height: 1.6;
+
+}
+
+/* !end section doctors */
 
 
-
-
+/* ?start section clear vision */
 .container-two {
     display: flex;
     justify-content: center;
@@ -145,6 +263,7 @@ html {
     height: 200px;
     background-color: var(--color-teal-2);
 }
+
 .container-btn {
     width: 90%;
     display: flex;
@@ -157,6 +276,8 @@ html {
         border: 0.5px solid white;
     }
 }
+
+/* ?end section clear vision */
 
 /* ?start FOOTER */
 .footer {
