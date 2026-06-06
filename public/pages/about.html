@@ -10,13 +10,16 @@
 </head>
 
 <body>
-
-    <!-- !start header -->
     <header class="container-header">
         <div class="optilux">
-
             <h1><i class="fa-solid fa-compass-drafting"></i> optilux</h1>
         </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-cb">
+        <label for="menu-toggle" class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
         <nav class="navbar">
             <li class="list-nav"><a href="/index.html" class="link-nav">Home</a><i class="fa-solid fa-angle-down"
                     style="color: rgb(115, 123, 118);"></i></li>
@@ -40,7 +43,6 @@
             <a class="btn-visit" href=""></a>
         </div>
     </header>
-    <!-- ! end header -->
     <main>
         <section class="hero-section">
             <div class="header-hero">
@@ -69,12 +71,10 @@
                 </div>
             </div>
         </section>
-        <!-- ?start expertise -->
         <section class="expertise">
             <div class="container-expertise">
                 <h2>Our Expertise</h2>
                 <div class="skills-container">
-                    <!--? ITEM -->
                     <div class="skill">
                         <div class="skill-info">
                             <span>Comprehensive Eye Exams</span>
@@ -84,7 +84,6 @@
                             <div class="progress pro-1"></div>
                         </div>
                     </div>
-                    <!--? ITEM -->
                     <div class="skill">
                         <div class="skill-info">
                             <span>Vision Correction & Glasses</span>
@@ -94,7 +93,6 @@
                             <div class="progress pro-2"></div>
                         </div>
                     </div>
-                    <!--? ITEM -->
                     <div class="skill">
                         <div class="skill-info">
                             <span>Contact Lens Fitting</span>
@@ -104,19 +102,15 @@
                             <div class="progress pro-3"></div>
                         </div>
                     </div>
-                    <!--? ITEM -->
                     <div class="skill">
-
                         <div class="skill-info">
                             <span>Pediatric Eye Care</span>
                             <span>80%</span>
                         </div>
-
                         <div class="progress-bar">
                             <div class="progress pro-4"></div>
                         </div>
                     </div>
-                    <!--? ITEM -->
                     <div class="skill">
                         <div class="skill-info">
                             <span>Dry Eye Treatment</span>
@@ -126,7 +120,6 @@
                             <div class="progress pro-5"></div>
                         </div>
                     </div>
-                    <!--? ITEM -->
                     <div class="skill">
                         <div class="skill-info">
                             <span>Advanced Diagnostic Technology</span>
@@ -139,55 +132,62 @@
                 </div>
             </div>
         </section>
-        <!-- todo end EXPERTISE SECTION -->
         <section class="doctors-section">
             <div class="text-center">
                 <span>Our Doctors</span>
                 <h2>Excellence in Optometry and Quality Care</h2>
             </div>
             <div class="container-doctors">
-                <div class="doctor-card">
-                    <div class="doctor-img">
+                <div class="doctor-card-1">
+                    <div class="card">
                         <img src="/public/images/111.webp" alt="">
                     </div>
-                    <h3>Dr. Thomas Bennett</h3>
-                    <p>Senior Optometrist</p>
+                    <div class="content">
+                        <h3>Dr. Peter Smith</h3>
+                        <p>Pediatric Eye Care</p>
+                    </div>
                     <div class="doctor-socials">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="doctor-card">
-                    <div class="doctor-img">
+                <div class="doctor-card-1">
+                    <div class="card">
                         <img src="/public/images/123.webp" alt="">
                     </div>
-                    <h3>Dr. Barbara Charline</h3>
-                    <p>Vision Correction Specialist</p>
+                    <div class="content">
+                        <h3>Dr. Barbara Charline</h3>
+                        <p>Vision Correction Specialist</p>
+                    </div>
                     <div class="doctor-socials">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="doctor-card">
-                    <div class="doctor-img">
+                <div class="doctor-card-1">
+                    <div class="card">
                         <img src="/public/images/3.webp" alt="">
                     </div>
-                    <h3>Dr. Peter Smith</h3>
-                    <p>Pediatric Eye Care</p>
+                    <div class="content">
+                        <h3>Dr. Peter Smith</h3>
+                        <p>Pediatric Eye Care</p>
+                    </div>
                     <div class="doctor-socials">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="doctor-card">
-                    <div class="doctor-img">
+                <div class="doctor-card-1">
+                    <div class="card">
                         <img src="/public/images/4.webp" alt="">
                     </div>
-                    <h3>Dr. Joshua Henry</h3>
-                    <p>Contact Lens Specialist</p>
+                    <div class="content">
+                        <h3>Dr. Joshua Henry</h3>
+                        <p>Contact Lens Specialist</p>
+                    </div>
                     <div class="doctor-socials">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
@@ -216,16 +216,13 @@
                 </div>
             </div>
         </section>
-        <!-- ?start section -->
         <section class="container-two">
             <div class="container-btn">
                 <h2>Clear Vision Starts Here. Schedule Your Eye Exam Today</h2>
                 <a href="#appointment-section" class="btn-visit"></a>
             </div>
         </section>
-        <!-- ?end section -->
     </main>
-    <!--? start FOOTER -->
     <footer class="footer">
         <div class="container-footer">
             <div class="footer-brand">
@@ -233,8 +230,7 @@
                     <i class="fa-solid fa-compass-drafting"></i> Optilux
                 </a>
                 <p>At Optilux, we're dedicated to providing high-quality, personalized eye care for patients of all
-                    ages. Our skilled team uses the latest technology to ensure accurate exams, effective
-                    treatments,
+                    ages. Our skilled team uses the latest technology to ensure accurate exams, effective treatments,
                     and clear, healthy vision for life.</p>
                 <div class="social-icons">
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -271,22 +267,19 @@
                 <div class="contact-item">
                     <i class="fa-solid fa-location-dot"></i>
                     <div>
-                        <span class="contact-label">Clinic Location</span>
-                        100 S Main St, New York, NY
+                        <span class="contact-label">Clinic Location</span> 100 S Main St, New York, NY
                     </div>
                 </div>
                 <div class="contact-item">
                     <i class="fa-solid fa-phone"></i>
                     <div>
-                        <span class="contact-label">Call Us</span>
-                        +1 232 343 9296
+                        <span class="contact-label">Call Us</span> +1 232 343 9296
                     </div>
                 </div>
                 <div class="contact-item">
                     <i class="fa-solid fa-envelope"></i>
                     <div>
-                        <span class="contact-label">Send a Message</span>
-                        contact@optilux.com
+                        <span class="contact-label">Send a Message</span> contact@optilux.com
                     </div>
                 </div>
             </div>

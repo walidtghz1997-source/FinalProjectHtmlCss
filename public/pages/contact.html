@@ -10,12 +10,16 @@
 </head>
 
 <body>
-    <!-- !start header -->
     <header class="container-header">
         <div class="optilux">
-
             <h1><i class="fa-solid fa-compass-drafting"></i> optilux</h1>
         </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-cb">
+        <label for="menu-toggle" class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
         <nav class="navbar">
             <li class="list-nav"><a href="/index.html" class="link-nav">Home</a><i class="fa-solid fa-angle-down"
                     style="color: rgb(115, 123, 118);"></i></li>
@@ -23,25 +27,28 @@
                     class="fa-solid fa-angle-down" style="color: rgb(115, 123, 118);"></i></li>
             <li class="list-nav"><a href="/public/pages/about.html" class="link-nav">About Us</a><i
                     class="fa-solid fa-angle-down" style="color: rgb(115, 123, 118);"></i></li>
-                        <li class="list-nav dorp-list"><a href="/public/pages/faq.html" class="link-nav">Pages <i
+            <li class="list-nav dorp-list"><a href="/public/pages/faq.html" class="link-nav">Pages <i
                         class="fa-solid fa-angle-down" style="color: rgb(115, 123, 118);"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="/public/pages/faq.html" class="link-nav">FAQ </a></li>
                     <li><a href="/public/pages/testimonials.html" class="link-nav">Testimonilas</a></li>
                 </ul>
             </li>
-            <li class="list-nav"><a href="" class="link-nav">Shop</a><i class="fa-solid fa-angle-down"
-                    style="color: rgb(115, 123, 118);"></i></li>
+            <li class="list-nav dorp-list"><a href="/public/pages/shop1.html" class="link-nav">Shop <i
+                        class="fa-solid fa-angle-down" style="color: rgb(115, 123, 118);"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/public/pages/shop1.html" class="link-nav">Shop 1 </a></li>
+                    <li><a href="/public/pages/shop2.html" class="link-nav">Shop 2</a></li>
+                </ul>
+            </li>
             <li class="list-nav"><a href="" class="link-nav">Blog</a></li>
             <li class="list-nav"><a href="/public/pages/contact.html" class="link-nav">Contact</a></li>
         </nav>
         <div>
-            <a class="btn-visit" href=""></a>
+            <a class="btn-visit" href="">Book Your Visit</a>
         </div>
     </header>
-    <!-- ! end header -->
     <main class="main">
-        <!-- ?start section  -->
         <section class="section-contact">
             <div class="header-hero">
                 <h1>Contact Us</h1>
@@ -86,18 +93,18 @@
                     </div>
                     <div class="box-right">
                         <form class="container-form">
-                                <div class="field-set">
-                                    <input type="text" class="form-control" placeholder="Your Name">
-                                </div>
-                                <div class="field-set">
-                                    <input type="email" class="form-control" placeholder="Your Email">
-                                </div>
-                                <div class="field-set"> <input type="text" name="phone" id="phone"
-                                        class="form-control mb-4" placeholder="Your Phone">
-                                </div>
-                                <div class="field-set">
-                                    <textarea class="form-control" placeholder="Your Message"></textarea>
-                                </div>
+                            <div class="field-set">
+                                <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="field-set">
+                                <input type="email" class="form-control" placeholder="Your Email">
+                            </div>
+                            <div class="field-set"> <input type="text" name="phone" id="phone" class="form-control mb-4"
+                                    placeholder="Your Phone">
+                            </div>
+                            <div class="field-set">
+                                <textarea class="form-control" placeholder="Your Message"></textarea>
+                            </div>
                             <div>
                                 <input type="submit" value="Send Message" class="btn-form">
                             </div>
@@ -107,7 +114,6 @@
             </div>
         </section>
     </main>
-    <!--? start FOOTER -->
     <footer class="footer">
         <div class="container-footer">
             <div class="footer-brand">
@@ -115,8 +121,7 @@
                     <i class="fa-solid fa-compass-drafting"></i> Optilux
                 </a>
                 <p>At Optilux, we're dedicated to providing high-quality, personalized eye care for patients of all
-                    ages. Our skilled team uses the latest technology to ensure accurate exams, effective
-                    treatments,
+                    ages. Our skilled team uses the latest technology to ensure accurate exams, effective treatments,
                     and clear, healthy vision for life.</p>
                 <div class="social-icons">
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -184,7 +189,6 @@
         </div>
         <a href="#" class="btn-arrow-top"><i class="fa-solid fa-angle-up arrow-top"></i></a>
     </footer>
-    <!--? End FOOTER -->
 </body>
 
 </html>

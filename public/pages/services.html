@@ -6,41 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optilux - Eye Clinic Optometry</title>
     <script src="https://kit.fontawesome.com/50950c4c6a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/public/css/services.css">
+    <link class="responsive-style" rel="stylesheet" href="/public/css/services.css">
 </head>
 
 <body>
-
-    <!-- !start header -->
     <header class="container-header">
         <div class="optilux">
-
             <h1><i class="fa-solid fa-compass-drafting"></i> optilux</h1>
         </div>
-        <nav class="navbar">
-            <li class="list-nav"><a href="/index.html" class="link-nav">Home</a><i class="fa-solid fa-angle-down"
-                    style="color: rgb(115, 123, 118);"></i></li>
-            <li class="list-nav"><a href="services.html" class="link-nav">Services</a><i class="fa-solid fa-angle-down"
-                    style="color: rgb(115, 123, 118);"></i></li>
-            <li class="list-nav"><a href="about.html" class="link-nav">About Us</a><i class="fa-solid fa-angle-down"
-                    style="color: rgb(115, 123, 118);"></i></li>
-                                <li class="list-nav dorp-list"><a href="/public/pages/faq.html" class="link-nav">Pages <i
-                        class="fa-solid fa-angle-down" style="color: rgb(115, 123, 118);"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="/public/pages/faq.html" class="link-nav">FAQ </a></li>
-                    <li><a href="/public/pages/testimonials.html" class="link-nav">Testimonilas</a></li>
-                </ul>
-            </li>
-            <li class="list-nav"><a href="" class="link-nav">Shop</a><i class="fa-solid fa-angle-down"
-                    style="color: rgb(115, 123, 118);"></i></li>
-            <li class="list-nav"><a href="" class="link-nav">Blog</a></li>
-            <li class="list-nav"><a href="/public/pages/contact.html" class="link-nav">Contact</a></li>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-cb">
+        <label for="menu-toggle" class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav >
+            <ul class="navbar">
+                <li class="list-nav"><a href="/index.html" class="link-nav">Home</a><i class="fa-solid fa-angle-down"
+                        style="color: rgb(115, 123, 118);"></i></li>
+                <li class="list-nav"><a href="services.html" class="link-nav">Services</a><i
+                        class="fa-solid fa-angle-down" style="color: rgb(115, 123, 118);"></i></li>
+                <li class="list-nav"><a href="about.html" class="link-nav">About Us</a><i class="fa-solid fa-angle-down"
+                        style="color: rgb(115, 123, 118);"></i></li>
+                <li class="list-nav dorp-list"><a href="/public/pages/faq.html" class="link-nav">Pages <i
+                            class="fa-solid fa-angle-down" style="color: rgb(115, 123, 118);"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/public/pages/faq.html" class="link-nav">FAQ </a></li>
+                        <li><a href="/public/pages/testimonials.html" class="link-nav">Testimonilas</a></li>
+                    </ul>
+                </li>
+                <li class="list-nav dorp-list"><a href="/public/pages/shop1.html" class="link-nav">Shop <i
+                            class="fa-solid fa-angle-down" style="color: rgb(115, 123, 118);"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/public/pages/shop1.html" class="link-nav">Shop 1 </a></li>
+                        <li><a href="/public/pages/shop2.html" class="link-nav">Shop 2</a></li>
+                    </ul>
+                </li>
+                <li class="list-nav"><a href="" class="link-nav">Blog</a></li>
+                <li class="list-nav"><a href="/public/pages/contact.html" class="link-nav">Contact</a></li>
+            </ul>
         </nav>
         <div>
-            <a class="btn-visit" href=""></a>
+            <a class="btn-visit" href=""><span class="visit-btn">Book Your Visit</span></a>
         </div>
     </header>
-    <!-- ! end header -->
     <main>
         <section class="hero-section">
             <div class="header-hero">
@@ -80,7 +89,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="key-benefits">
                         <h3>Key Benefits</h3>
                         <div class="container-benefits">
@@ -92,7 +100,6 @@
                                         safer procedures.</p>
                                 </div>
                             </div>
-
                             <div class="benefit-item">
                                 <div class="icon-check"><i class="fa-solid fa-check"></i></div>
                                 <div>
@@ -101,7 +108,6 @@
                                         needs.</p>
                                 </div>
                             </div>
-
                             <div class="benefit-item">
                                 <div class="icon-check"><i class="fa-solid fa-check"></i></div>
                                 <div>
@@ -110,7 +116,6 @@
                                         correction.</p>
                                 </div>
                             </div>
-
                             <div class="benefit-item">
                                 <div class="icon-check"><i class="fa-solid fa-check"></i></div>
                                 <div>
@@ -119,7 +124,6 @@
                                         treatment.</p>
                                 </div>
                             </div>
-
                             <div class="benefit-item">
                                 <div class="icon-check"><i class="fa-solid fa-check"></i></div>
                                 <div>
@@ -128,7 +132,6 @@
                                         long-term eye health.</p>
                                 </div>
                             </div>
-
                             <div class="benefit-item">
                                 <div class="icon-check"><i class="fa-solid fa-check"></i></div>
                                 <div>
@@ -137,14 +140,12 @@
                                         confidence and ease.</p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </section>
             </div>
-
+        </section>
     </main>
-    <!--? start FOOTER -->
     <footer class="footer">
         <div class="container-footer">
             <div class="footer-brand">
@@ -152,8 +153,7 @@
                     <i class="fa-solid fa-compass-drafting"></i> Optilux
                 </a>
                 <p>At Optilux, we're dedicated to providing high-quality, personalized eye care for patients of all
-                    ages. Our skilled team uses the latest technology to ensure accurate exams, effective
-                    treatments,
+                    ages. Our skilled team uses the latest technology to ensure accurate exams, effective treatments,
                     and clear, healthy vision for life.</p>
                 <div class="social-icons">
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>

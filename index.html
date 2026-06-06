@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/public/css/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/50950c4c6a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -15,6 +16,12 @@
         <div class="optilux">
             <h1><i class="fa-solid fa-compass-drafting"></i> optilux</h1>
         </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-cb">
+        <label for="menu-toggle" class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
         <nav class="navbar">
             <li class="list-nav"><a href="/index.html" class="link-nav">Home</a><i class="fa-solid fa-angle-down"
                     style="color: rgb(115, 123, 118);"></i></li>
@@ -29,13 +36,18 @@
                     <li><a href="/public/pages/testimonials.html" class="link-nav">Testimonilas</a></li>
                 </ul>
             </li>
-            <li class="list-nav"><a href="" class="link-nav">Shop</a><i class="fa-solid fa-angle-down"
-                    style="color: rgb(115, 123, 118);"></i></li>
+            <li class="list-nav dorp-list"><a href="/public/pages/shop1.html" class="link-nav">Shop <i
+                        class="fa-solid fa-angle-down" style="color: rgb(115, 123, 118);"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/public/pages/shop1.html" class="link-nav">Shop 1 </a></li>
+                    <li><a href="/public/pages/shop2.html" class="link-nav">Shop 2</a></li>
+                </ul>
+            </li>
             <li class="list-nav"><a href="" class="link-nav">Blog</a></li>
             <li class="list-nav"><a href="/public/pages/contact.html" class="link-nav">Contact</a></li>
         </nav>
         <div>
-            <a class="btn-visit" href=""></a>
+            <a class="btn-visit" href=""><span class="visit-p">Book Your Visit</span></a>
         </div>
     </header>
     <!-- ! end header -->
@@ -58,7 +70,7 @@
                         From routine eye exams to specialized treatments, our expert
                         team ensures your vision stays sharp and healthy.
                     </p>
-                    <a class="btn-visit-2 " href=""></a>
+                    <a class="btn-visit-2 " href=""> <span class="visit-p">Book Appointment</span> </a>
                     <div class="box-rating">
                         <span>Google Rating</span>
                         <span>5.0</span>
@@ -95,8 +107,7 @@
                 </div>
 
             </div>
-            <i class="fa-solid fa-chevron-left row-left"></i>
-            <i class="fa-solid fa-chevron-right row-right"></i <!-- todo start EXPERTISE -->
+
             <div class="expertise">
                 <h2>Our Expertise</h2>
                 <div class="skills-container">
@@ -182,7 +193,7 @@
                     <div class="card-content">
                         <h3>Comprehensive Eye Exams</h3>
                         <p>Full vision check, refraction, and early detection of eye diseases.</p>
-                        <a href="#" class="card-link">
+                        <a href="" class="card-link">
                             <span class="arrow-icon">↗</span>
                         </a>
                     </div>
@@ -195,7 +206,7 @@
                     <div class="card-content">
                         <h3>Glasses & Contact Lenses</h3>
                         <p>Prescription glasses, contact lens fitting, and digital eye strain solutions.</p>
-                        <a href="#" class="card-link">
+                        <a href="" class="card-link">
                             <span class="arrow-icon">↗</span>
                         </a>
                     </div>
@@ -208,7 +219,7 @@
                     <div class="card-content">
                         <h3>Pediatric Eye Care</h3>
                         <p>Myopia control, lazy eye treatment, and strabismus correction for children.</p>
-                        <a href="#" class="card-link">
+                        <a href="" class="card-link">
                             <span class="arrow-icon">↗</span>
                         </a>
                     </div>
@@ -221,7 +232,7 @@
                     <div class="card-content">
                         <h3>Cataract Surgery</h3>
                         <p>Standard removal, premium intraocular lens, and laser-assisted surgery.</p>
-                        <a href="#" class="card-link">
+                        <a href="" class="card-link">
                             <span class="arrow-icon">↗</span>
                         </a>
                     </div>
@@ -234,7 +245,7 @@
                     <div class="card-content">
                         <h3>Refractive Surgery</h3>
                         <p>LASIK, PRK, and SMILE for permanent correction of vision problems.</p>
-                        <a href="#" class="card-link">
+                        <a href="" class="card-link">
                             <span class="arrow-icon">↗</span>
                         </a>
                     </div>
@@ -247,7 +258,7 @@
                     <div class="card-content">
                         <h3>Glaucoma Care</h3>
                         <p>Screening, monitoring eye pressure, laser therapy, and surgery.</p>
-                        <a href="#" class="card-link">
+                        <a href="" class="card-link">
                             <span class="arrow-icon">↗</span>
                         </a>
                     </div>
@@ -381,7 +392,7 @@
                         </div>
 
                         <textarea class="form-textarea" placeholder="Message"></textarea>
-                        <a href="" class="btn-visit-3"></a>
+                        <a href="" class="btn-visit-3"><span class="visit-p">Send Appointment</span></a>
                     </form>
                 </div>
             </div>
@@ -390,69 +401,69 @@
         <section class="section-testimonials">
             <!-- todo start TESTIMONIALS SECTION -->
             <div class="container-testimonials">
-                <div class="box-testimonial-one">
-                    <div class="testimonials">
-                        <span class="title-1">Testimonials</span>
-                        <h2 class="section-title">What Our Patients Are Saying</h2>
-                        <p class="paragraphe-testimonials">
-                            From comprehensive eye exams to advanced treatments, our clinic is dedicated to helping
-                            patients
-                            achieve clear, healthy vision with compassionate care.
-                        </p>
-                    </div>
-                    <div class="slider-arrows">
-                        <button class="arrow-btn"><i class="fa-solid fa-chevron-left"></i></button>
-                        <button class="arrow-btn"><i class="fa-solid fa-chevron-right"></i></button>
-                    </div>
+                <div class="testimonials">
+                    <span class="title-1">Testimonials</span>
+                    <h2 class="section-title">What Our Patients Are Saying</h2>
+                    <p class="paragraphe-testimonials">
+                        From comprehensive eye exams to advanced treatments, our clinic is dedicated to helping
+                        patients
+                        achieve clear, healthy vision with compassionate care.
+                    </p>
+                </div>
+                <div class="slider-arrows">
+                    <button class="arrow-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="arrow-btn"><i class="fa-solid fa-chevron-right"></i></button>
                 </div>
                 <!--? Testimonial card 1 -->
-                <div class="testimonial-card">
-                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-                    <div class="paragraphe-card">
-                        <p>"The optometrist was very patient and explained my results in detail. I finally found the
-                            right prescription, and my new glasses have completely improved my daily life."</p>
-                        <div class="review-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                <div class="container-card">
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <div class="paragraphe-card">
+                            <p>"The optometrist was very patient and explained my results in detail. I finally found the
+                                right prescription, and my new glasses have completely improved my daily life."</p>
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                     </div>
-
+                    <div class="user-profile">
+                        <div class="box-avarat-user">
+                            <img src="./public/images/1.webp" class="user-avatar">
+                        </div>
+                        <div class="box-name-user">
+                            <div class="user-name">Michael Lee</div>
+                            <div class="user-date">2 February 2025</div>
+                        </div>
+                    </div>
                 </div>
                 <!--?Testimonial card 2 -->
-                <div class="testimonial-card">
-                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-                    <div class="paragraphe-card">
-                        <p>"I brought my son for an eye exam and the staff made him feel so relaxed. The doctor was
-                            gentle, caring, and gave us a clear plan to support his vision needs at school."</p>
-                        <div class="review-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                <div class="container-card">
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <div class="paragraphe-card">
+                            <p>"I brought my son for an eye exam and the staff made him feel so relaxed. The doctor was
+                                gentle, caring, and gave us a clear plan to support his vision needs at school."</p>
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="user-profile">
-                    <div class="box-avarat-user">
-                        <img src="./public/images/1.webp" class="user-avatar">
-                    </div>
-                    <div class="box-name-user">
-                        <div class="user-name">Michael Lee</div>
-                        <div class="user-date">2 February 2025</div>
-                    </div>
-                </div>
-                <div class="user-profile">
-                    <div class="box-avarat-user">
-                        <img src="./public/images/2.webp" class="user-avatar">
-                    </div>
-                    <div class="box-name-user">
-                        <div class="user-name">Emily Johnson</div>
-                        <div class="user-date">15 March 2025</div>
+                    <div class="user-profile">
+                        <div class="box-avarat-user">
+                            <img src="./public/images/2.webp" class="user-avatar">
+                        </div>
+                        <div class="box-name-user">
+                            <div class="user-name">Emily Johnson</div>
+                            <div class="user-date">15 March 2025</div>
+                        </div>
                     </div>
                 </div>
 
@@ -460,7 +471,6 @@
                     <div class="dot-active"></div>
                     <div class="dot"></div>
                 </div>
-            </div>
         </section>
         <!--todo End TESTIMONIALS SECTION -->
         <section class="section-faq">
@@ -510,7 +520,7 @@
 
                 <div id="video-popup" class="popup-exam">
                     <div class="popup-content">
-                        <a href="#" class="close-btn">&times;</a>
+                        <a href="index.html" class="close-btn">&times;</a>
                         <iframe width="560" height="315"
                             src="https://www.youtube.com/embed/4T0G0zCBYTc?si=HQmaYlCXCXKeLLB9"
                             title="YouTube video player" frameborder="0"
@@ -602,9 +612,10 @@
                         <a href="#">Privacy Policy</a>
                     </div>
                 </div>
+                <a href="#" class="btn-arrow-top"><i class="fa-solid fa-angle-up arrow-top"></i></a>
             </div>
+            <!--? End FOOTER -->
         </footer>
-        <!--? End FOOTER -->
     </main>
 </body>
 

@@ -15,6 +15,12 @@
         <div class="optilux">
             <h1><i class="fa-solid fa-compass-drafting"></i> optilux</h1>
         </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-cb">
+        <label for="menu-toggle" class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
         <nav class="navbar">
             <li class="list-nav"><a href="/index.html" class="link-nav">Home</a><i class="fa-solid fa-angle-down"
                     style="color: rgb(115, 123, 118);"></i></li>
@@ -26,21 +32,32 @@
                         class="fa-solid fa-angle-down" style="color: rgb(115, 123, 118);"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="/public/pages/faq.html" class="link-nav">FAQ </a></li>
-                    <li><a href="/public/pages/shop2.html" class="link-nav">Testimonilas </a></li>
+                    <li><a href="/public/pages/testimonials.html" class="link-nav">Testimonilas </a></li>
                 </ul>
             </li>
             <li class="list-nav dorp-list"><a href="/public/pages/shop1.html" class="link-nav">Shop <i
                         class="fa-solid fa-angle-down" style="color: rgb(115, 123, 118);"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="/public/pages/shop1.html" class="link-nav">Shop 1 </a></li>
-                    <li><a href="/public/pages/testimonials.html" class="link-nav">Shop 2</a></li>
+                    <li><a href="/public/pages/shop2.html" class="link-nav">Shop 2</a></li>
                 </ul>
             </li>
             <li class="list-nav"><a href="" class="link-nav">Blog</a></li>
             <li class="list-nav"><a href="/public/pages/contact.html" class="link-nav">Contact</a></li>
         </nav>
-        <div>
-            <a class="btn-visit" href=""></a>
+        <div class="nav-search">
+            <div class="box-search">
+                <input type="text" placeholder="Search...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="icon-badge">
+                <i class="fa-regular fa-heart"></i>
+                <span class="badge">0</span>
+            </div>
+            <div class="icon-badge">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span class="badge">10</span>
+            </div>
         </div>
     </header>
     <!-- ! end header -->
@@ -51,275 +68,380 @@
                 <h1>Shop</h1>
                 <div class="box-hero">
                     <a href="/index.html">Home</a> <i class="fa-solid fa-chevron-right"></i> <a
-                        href="/public/pages/faq.html">Shop</a>
+                        href="/public/pages/shop1.html">Shop</a>
                 </div>
             </div>
         </section>
         <!-- ?end hero section -->
-        <aside class="sidebar">
-            <!-- ?start aside -->
-            <div class="filter-group">
-                <h3>Price ($)</h3>
-                <div class="price-range">
-                    <span>Min <strong>0</strong></span>
-                    <span>Max <strong>1000</strong></span>
-                </div>
-                <input type="range" min="0" max="1000" value="1000" class="slider">
-            </div>
-
-            <div class="filter-group">
-                <h3>Categories</h3>
-                <label class="checkbox-container"><input type="checkbox"> Eyeglasses</label>
-                <label class="checkbox-container"><input type="checkbox" checked> Sunglasses</label>
-                <label class="checkbox-container"><input type="checkbox"> Reading Glasses</label>
-                <label class="checkbox-container"><input type="checkbox" checked> Blue Light Glasses</label>
-                <label class="checkbox-container"><input type="checkbox"> Contact Lenses</label>
-                <label class="checkbox-container"><input type="checkbox"> Lens Cleaners</label>
-                <label class="checkbox-container"><input type="checkbox"> Frames</label>
-            </div>
-
-            <div class="filter-group">
-                <h3>Brands</h3>
-                <label class="checkbox-container"><input type="checkbox"> Ray-Ban</label>
-                <label class="checkbox-container"><input type="checkbox" checked> Oakley</label>
-                <label class="checkbox-container"><input type="checkbox"> Gucci</label>
-                <label class="checkbox-container"><input type="checkbox" checked> Prada</label>
-                <label class="checkbox-container"><input type="checkbox"> Versace</label>
-                <label class="checkbox-container"><input type="checkbox"> Tom Ford</label>
-                <label class="checkbox-container"><input type="checkbox"> Persol</label>
-                <label class="checkbox-container"><input type="checkbox"> Michael Kors</label>
-                <label class="checkbox-container"><input type="checkbox"> Burberry</label>
-            </div>
-        </aside>
-            <!-- ?End aside -->
-        <section class="section-products">
-            <!-- ?start section products-->
-            <div class="container-products">
-                <div class="card-product">
-                    <span class="sale-tag">Sale</span>
-                    <div class="container-img">
-                        <div class="placeholder-img glasses-1"></div>
-                        <div class="hover-actions">
-                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                            <button><i class="fa-solid fa-basket-shopping"></i></button>
-                            <button><i class="fa-regular fa-heart"></i></button>
-                        </div>
+        <div class="container-main">
+            <aside class="sidebar">
+                <!-- ?start aside -->
+                <div class="group-filter">
+                    <h3>Price ($)</h3>
+                    <div class="price-value">
+                        <span>Min <strong>0</strong></span>
+                        <span>Max <strong>1000</strong></span>
                     </div>
-                    <div class="info-product">
-                        <div class="rating">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    <div class="slider-container">
+                        <input type="range" class="min-range" min="0" max="1000" value="0">
+                        <input type="range" class="max-range" min="0" max="1000" value="1000">
+                    </div>
+                </div>
+                <div class="group-filter">
+                    <h3>Categories</h3>
+                    <label class="checkbox-container"><input type="checkbox"> Eyeglasses</label>
+                    <label class="checkbox-container"><input type="checkbox"> Sunglasses</label>
+                    <label class="checkbox-container"><input type="checkbox"> Reading Glasses</label>
+                    <label class="checkbox-container"><input type="checkbox"> Blue Light Glasses</label>
+                    <label class="checkbox-container"><input type="checkbox"> Contact Lenses</label>
+                    <label class="checkbox-container"><input type="checkbox"> Lens Cleaners</label>
+                    <label class="checkbox-container"><input type="checkbox"> Frames</label>
+                </div>
+
+                <div class="group-filter">
+                    <h3>Brands</h3>
+                    <label class="checkbox-container"><input type="checkbox"> Ray-Ban</label>
+                    <label class="checkbox-container"><input type="checkbox"> Oakley</label>
+                    <label class="checkbox-container"><input type="checkbox"> Gucci</label>
+                    <label class="checkbox-container"><input type="checkbox"> Prada</label>
+                    <label class="checkbox-container"><input type="checkbox"> Versace</label>
+                    <label class="checkbox-container"><input type="checkbox"> Tom Ford</label>
+                    <label class="checkbox-container"><input type="checkbox"> Persol</label>
+                    <label class="checkbox-container"><input type="checkbox"> Michael Kors</label>
+                    <label class="checkbox-container"><input type="checkbox"> Burberry</label>
+                </div>
+            </aside>
+            <!-- ?End aside -->
+            <section class="section-products">
+                <!-- ?start section products-->
+                <div class="container-products">
+                    <div class="card-product">
+                        <div class="div-foto-icons">
+                            <p class="badge">Sale</p>
+                            <div class="image-container">
+                                <img class="img-default" src="/public/images/p1-a.webp" alt="">
+                                <img class="img-hover" src="/public/images/p1-b (1).webp" alt="">
+                            </div>
+                            <div class="hover-icon">
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-magnifying-glass-plus icon"></i>
+                                </div>
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-cart-shopping icon"></i>
+                                </div>
+                                <div class="box-icon">
+                                    <i class="fa-regular fa-heart icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                 class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                 class="fa-solid fa-star"></i>
                         </div>
-                        <h4>Classic Black Frame Glasses</h4>
+                        <p class="product-name">Classic Black Frame Glasses</p>
+                        <p class="price">$32.99</p>
+                    </div>
+                    <div class="card-product">
+                        <div class="div-foto-icons">
+                            <p class="badge">Sale</p>
+                            <div class="image-container">
+                                <img class="img-default" src="/public/images/pp.webp" alt="">
+                                <img class="img-hover" src="/public/images/p3-b.webp" alt="">
+                            </div>
+                            <div class="hover-icon">
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-magnifying-glass-plus icon"></i>
+                                </div>
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-cart-shopping icon"></i>
+                                </div>
+                                <div class="box-icon">
+                                    <i class="fa-regular fa-heart icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="product-name">Classic Black Frame Glasses</p>
+                        <p class="price">$32.99</p>
+                    </div>
+                    <div class="card-product">
+                        <div class="div-foto-icons">
+                            <p class="badge">Sale</p>
+                            <div class="image-container">
+                                <img class="img-default" src="/public/images/ww.webp" alt="">
+                                <img class="img-hover" src="/public/images/p2-b.webp" alt="">
+                            </div>
+                            <div class="hover-icon">
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-magnifying-glass-plus icon"></i>
+                                </div>
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-cart-shopping icon"></i>
+                                </div>
+                                <div class="box-icon">
+                                    <i class="fa-regular fa-heart icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="product-name">Classic Black Frame Glasses</p>
+                        <p class="price">$32.99</p>
+                        <div class="box_colors">
+                            <div class="color-1"><span></span></div>
+                            <div class="color-2"><span></span></div>
+                            <div class="color-3"><span></span></div>
+                            <div class="color-4"><span></span></div>
+                            <div class="color-5"><span></span></div>
+                        </div>
+                    </div>
+                    <div class="card-product">
+                        <div class="div-foto-icons">
+                            <p class="badge">Sale</p>
+                            <div class="image-container-2">
+                                <img class="img-default" src="/public/images/p1-a.webp" alt="">
+                            </div>
+                            <div class="hover-icon">
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-magnifying-glass-plus icon"></i>
+                                </div>
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-cart-shopping icon"></i>
+                                </div>
+                                <div class="box-icon">
+                                    <i class="fa-regular fa-heart icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="product-name">Classic Black Frame Glasses</p>
+                        <p class="price">$32.99</p>
+                    </div>
+                    <div class="card-product">
+                        <div class="div-foto-icons">
+                            <p class="badge">Sale</p>
+                            <div class="image-container-2">
+                                <img class="img-default" src="/public/images/p5-a.webp" alt="">
+                            </div>
+                            <div class="hover-icon">
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-magnifying-glass-plus icon"></i>
+                                </div>
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-cart-shopping icon"></i>
+                                </div>
+                                <div class="box-icon">
+                                    <i class="fa-regular fa-heart icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="product-name">Classic Black Frame Glasses</p>
+                        <p class="price">$32.99</p>
+                    </div>
+                    <div class="card-product">
+                        <div class="div-foto-icons">
+                            <p class="badge">Sale</p>
+                            <div class="image-container-2">
+                                <img class="img-default" src="/public/images/p6-a.webp" alt="">
+                            </div>
+                            <div class="hover-icon">
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-magnifying-glass-plus icon"></i>
+                                </div>
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-cart-shopping icon"></i>
+                                </div>
+                                <div class="box-icon">
+                                    <i class="fa-regular fa-heart icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="product-name">Classic Black Frame Glasses</p>
+                        <p class="price">$32.99</p>
+                    </div>
+                    <div class="card-product">
+                        <div class="div-foto-icons">
+                            <p class="badge">Sale</p>
+                            <div class="image-container-2">
+                                <img class="img-default" src="/public/images/p7-a.webp" alt="">
+                            </div>
+                            <div class="hover-icon">
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-magnifying-glass-plus icon"></i>
+                                </div>
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-cart-shopping icon"></i>
+                                </div>
+                                <div class="box-icon">
+                                    <i class="fa-regular fa-heart icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="product-name">Classic Black Frame Glasses</p>
+                        <p class="price">$32.99</p>
+                    </div>
+                    <div class="card-product">
+                        <div class="div-foto-icons">
+                            <p class="badge">Sale</p>
+                            <div class="image-container-2">
+                                <img class="img-default" src="/public/images/p8-a.webp" alt="">
+                            </div>
+                            <div class="hover-icon">
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-magnifying-glass-plus icon"></i>
+                                </div>
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-cart-shopping icon"></i>
+                                </div>
+                                <div class="box-icon">
+                                    <i class="fa-regular fa-heart icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="product-name">Classic Black Frame Glasses</p>
+                        <p class="price">$32.99</p>
+                    </div>
+                    <div class="card-product">
+                        <div class="div-foto-icons">
+                            <p class="badge">Sale</p>
+                            <div class="image-container-2">
+                                <img class="img-default" src="/public/images/p9-a.webp" alt="">
+                            </div>
+                            <div class="hover-icon">
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-magnifying-glass-plus icon"></i>
+                                </div>
+                                <div class="box-icon">
+                                    <i class="fa-solid fa-cart-shopping icon"></i>
+                                </div>
+                                <div class="box-icon">
+                                    <i class="fa-regular fa-heart icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="product-name">Classic Black Frame Glasses</p>
                         <p class="price">$32.99</p>
                     </div>
                 </div>
 
-                <div class="card-product">
-                    <span class="sale-tag">Sale</span>
-                    <div class="img-container">
-                        <div class="placeholder-img glasses-2"></div>
-                        <div class="hover-actions">
-                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                            <button><i class="fa-solid fa-basket-shopping"></i></button>
-                            <button><i class="fa-regular fa-heart"></i></button>
-                        </div>
-                    </div>
-                    <div class="info-product">
-                        <div class="rating">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
-                        </div>
-                        <h4>Aqua Blue Rectangular Sunglasses</h4>
-                        <p class="price">$11.99</p>
-                    </div>
+                <div class="last-section">
+                    <a href="/public/pages/shop1.html" class="arrow"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href="/public/pages/shop1.html">1</a>
+                    <a href="/public/pages/shop2.html" class="active">2</a>
+                    <a href="">3</a>
+                    <a href="/public/pages/shop2.html" class="arrow"><i class="fa-solid fa-chevron-right"></i></a>
                 </div>
-
-                <div class="card-product">
-                    <span class="sale-tag">Sale</span>
-                    <div class="img-container">
-                        <div class="box-image">
-
-                        </div>
-                        <div class="box-icons">
-                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                            <button><i class="fa-solid fa-basket-shopping"></i></button>
-                            <button><i class="fa-regular fa-heart"></i></button>
-                        </div>
-                    </div>
-                    <div class="info-product">
-                        <div class="rating">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
-                        </div>
-                        <h4>Stylish Cat-Eye Glasses</h4>
-                        <p class="price">$7.49</p>
-                        <div class="">
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-product">
-                    <span class="sale-tag">Sale</span>
-                    <div class="container-image">
-                        <div class="box-image">
-
-                        </div>
-                        <div class="box-icons">
-                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                            <button><i class="fa-solid fa-basket-shopping"></i></button>
-                            <button><i class="fa-regular fa-heart"></i></button>
-                        </div>
-                    </div>
-                    <div class="info-product">
-                        <div class="rating">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
-                        </div>
-                        <h4>Vintage Brown Aviator Glasses</h4>
-                        <p class="price">$7.49</p>
-                    </div>
-                </div>
-
-                <div class="card-product">
-                    <span class="sale-tag">Sale</span>
-                    <div class="container-image">
-                        <div class="box-image"></div>
-                        <div class="box-icons">
-                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                            <button><i class="fa-solid fa-basket-shopping"></i></button>
-                            <button><i class="fa-regular fa-heart"></i></button>
-                        </div>
-                    </div>
-                    <div class="info-product">
-                        <div class="rating">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
-                        </div>
-                        <h4>Purple Gradient Square Sunglasses</h4>
-                        <p class="price">$29.95</p>
-                    </div>
-                </div>
-
-                <div class="card-product">
-                    <span class="sale-tag">Sale</span>
-                    <div class="container-image">
-                        <div class="box-image">
-
-                        </div>
-                        <div class="box-icons">
-                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                            <button><i class="fa-solid fa-basket-shopping"></i></button>
-                            <button><i class="fa-regular fa-heart"></i></button>
-                        </div>
-                    </div>
-                    <div class="info-product">
-                        <div class="rating">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
-                        </div>
-                        <h4>Matte Black Round Sunglasses</h4>
-                        <p class="price">$6.99</p>
-                    </div>
-                </div>
-            </div>
+            </section>
             <!-- ?End section products-->
-
-            <div class="last-section">
-                <a href="" class="arrow"><i class="fa-solid fa-chevron-left"></i></a>
-                <a href="/public/pages/shop1.html">1</a>
-                <a href="/public/pages/shop2.html" class="active">2</a>
-                <a href="">3</a>
-                <a href="" class="arrow"><i class="fa-solid fa-chevron-right"></i></a>
-            </div>
-        </section>
+        </div>
     </main>
-        <!--? start FOOTER -->
-        <footer class="footer">
-            <div class="container-footer">
-                <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <i class="fa-solid fa-compass-drafting"></i> Optilux
-                    </a>
-                    <p>At Optilux, we're dedicated to providing high-quality, personalized eye care for patients of all
-                        ages. Our skilled team uses the latest technology to ensure accurate exams, effective
-                        treatments,
-                        and clear, healthy vision for life.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-threads"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    <!--? start FOOTER -->
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-compass-drafting"></i> Optilux
+                </a>
+                <p>At Optilux, we're dedicated to providing high-quality, personalized eye care for patients of all
+                    ages. Our skilled team uses the latest technology to ensure accurate exams, effective
+                    treatments,
+                    and clear, healthy vision for life.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-threads"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Comprehensive Eye Exams</a></li>
+                    <li><a href="#">Glasses & Contact Lenses</a></li>
+                    <li><a href="#">Pediatric Eye Care</a></li>
+                    <li><a href="#">Cataract Surgery</a></li>
+                    <li><a href="#">Refractive Surgery</a></li>
+                    <li><a href="#">Glaucoma Care</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>About Us</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Our Doctors</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-contact">
+                <h3>Contact Us</h3>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <span class="contact-label">Clinic Location</span>
+                        100 S Main St, New York, NY
                     </div>
                 </div>
-                <div class="footer-col">
-                    <h3>Services</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Comprehensive Eye Exams</a></li>
-                        <li><a href="#">Glasses & Contact Lenses</a></li>
-                        <li><a href="#">Pediatric Eye Care</a></li>
-                        <li><a href="#">Cataract Surgery</a></li>
-                        <li><a href="#">Refractive Surgery</a></li>
-                        <li><a href="#">Glaucoma Care</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>About Us</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">Our Doctors</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col footer-contact">
-                    <h3>Contact Us</h3>
-                    <div class="contact-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div>
-                            <span class="contact-label">Clinic Location</span>
-                            100 S Main St, New York, NY
-                        </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <span class="contact-label">Call Us</span>
+                        +1 232 343 9296
                     </div>
-                    <div class="contact-item">
-                        <i class="fa-solid fa-phone"></i>
-                        <div>
-                            <span class="contact-label">Call Us</span>
-                            +1 232 343 9296
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div>
-                            <span class="contact-label">Send a Message</span>
-                            contact@optilux.com
-                        </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <span class="contact-label">Send a Message</span>
+                        contact@optilux.com
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <div class="container-footer-bottom">
-                    <div>Copyright 2026 - Optilux by Designesia</div>
-                    <div class="footer-bottom-links">
-                        <a href="#">Terms & Conditions</a>
-                        <a href="#">Privacy Policy</a>
-                    </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container-footer-bottom">
+                <div>Copyright 2026 - Optilux by Designesia</div>
+                <div class="footer-bottom-links">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
                 </div>
             </div>
-        </footer>
-        <!--? End FOOTER -->
+            <a href="#" class="btn-arrow-top"><i class="fa-solid fa-angle-up arrow-top"></i></a>
+        </div>
+    </footer>
+    <!--? End FOOTER -->
     </main>
 </body>
 
 </html>
-    
